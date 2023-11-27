@@ -19,22 +19,22 @@ let digito6= 0;
 
 setInterval(function() {
 
-    if (digito1 !== 5) {
+    if (digito1 !== 9) {
         digito1++
 
-    } else if (digito2 !== 5) {
+    } else if (digito2 !== 9) {
         digito2++
       
-    } else if (digito3 !== 5) {
+    } else if (digito3 !== 9) {
         digito3++
       
-    } else if (digito4 !== 5) {
+    } else if (digito4 !== 9) {
         digito4++
       
-    } else if (digito5 !== 5) {
+    } else if (digito5 !== 9) {
         digito5++
       
-    } else if (digito6 !== 5) {
+    } else if (digito6 !== 9) {
         digito6++
     }
 
