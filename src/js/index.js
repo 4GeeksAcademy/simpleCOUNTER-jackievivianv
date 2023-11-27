@@ -9,4 +9,39 @@ import "../styles/index.css";
 import Home from "./component/home.jsx";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+let digito1 = 0;
+let digito2= 0;
+let digito3= 0;
+let digito4= 0;
+let digito5= 0;
+let digito6= 0;
+
+
+setInterval(function() {
+
+    if (digito1 !== 5) {
+        digito1++
+
+    } else if (digito2 !== 5) {
+        digito2++
+      
+    } else if (digito3 !== 5) {
+        digito3++
+      
+    } else if (digito4 !== 5) {
+        digito4++
+      
+    } else if (digito5 !== 5) {
+        digito5++
+      
+    } else if (digito6 !== 5) {
+        digito6++
+    }
+
+
+    ReactDOM.render(<Home digito1={digito1} digito2={digito2} digito3={digito3} digito4={digito4} digito5={digito5} digito6={digito6}/>, document.querySelector("#app"))
+
+    
+}, 1000)
+
+
