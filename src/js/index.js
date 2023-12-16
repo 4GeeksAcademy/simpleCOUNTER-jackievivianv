@@ -41,22 +41,33 @@ let reset = function(){
 
     if (digito1 !== 9) {
         digito1++
-
     } else if (digito2 !== 9) {
+        digito1 = 0
         digito2++
-      
     } else if (digito3 !== 9) {
         digito3++
-      
+        digito2 = 0
+        digito1 = 0
     } else if (digito4 !== 9) {
+        digito1 = 0
+        digito2 = 0
+        digito3 = 0
         digito4++
-      
     } else if (digito5 !== 9) {
+        digito1 = 0
+        digito2 = 0
+        digito3 = 0
+        digito4 = 0
         digito5++
-      
     } else if (digito6 !== 9) {
+        digito1 = 0
+        digito2 = 0
+        digito3 = 0
+        digito4 = 0
+        digito5 = 0
         digito6++
-    }
+    } 
+    
 
 
     ReactDOM.render(<Home digito1={digito1} digito2={digito2} digito3={digito3} digito4={digito4} digito5={digito5} digito6={digito6} stop={stop} reset={reset} startOver={startOver} /> , document.querySelector("#app"))
@@ -64,7 +75,7 @@ let reset = function(){
     
 
 
-}, 200)
+}, 100)
 
 
 
